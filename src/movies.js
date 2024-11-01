@@ -1,6 +1,8 @@
 let selectedbody = document.getElementById("movie");
 
-fetch("http://localhost:5173/javascriptmovieseatbookSTART-main/data.json")
+fetch(
+  "https://gist.githubusercontent.com/aspcodenet/32a21ce9d8b8ccf19108a8a02883e9bb/raw/785f9bcb1527cb01e182d3fe40ffafd6fd00dac9/movies.json"
+)
   .then((res) => res.json())
   .then((json) => {
     json.map((data) => {
@@ -16,5 +18,3 @@ export function AddMovies(Title, Year, Price, Poster) {
   option.innerHTML = `${Title} (${Year}) ${Price} kr`;
   return option;
 }
-
-
