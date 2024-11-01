@@ -9,5 +9,7 @@
 // kom ihåg loggbok och readme
 
 import { Seats } from "./seat.js";
+import { AddMovies } from "./movies.js";
 
 Seats();
+AddMovies();
