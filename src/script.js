@@ -8,8 +8,9 @@
 // länk finns https://gist.githubusercontent.com/aspcodenet/32a21ce9d8b8ccf19108a8a02883e9bb/raw/785f9bcb1527cb01e182d3fe40ffafd6fd00dac9/movies.json
 // kom ihåg loggbok och readme
 
-import { Seats } from "./seat.js";
+import { Seats, SelectedSeats } from "./seat.js";
 import { AddMovies } from "./movies.js";
 
 Seats();
 AddMovies();
+SelectedSeats();
