@@ -9,8 +9,9 @@
 // kom ihåg loggbok och readme
 
 import { Seats, SelectedSeats } from "./seat.js";
-import { AddMovies } from "./movies.js";
+import { AddMovies, CaclulateSeatCost } from "./movies.js";
 
+SelectedSeats();
 Seats();
 AddMovies();
-SelectedSeats();
+CaclulateSeatCost();

@@ -12,9 +12,15 @@ fetch(
     });
   });
 
-export function AddMovies(Title, Year, Price, Poster) {
+export function AddMovies(Title, Year, Price) {
   let option = document.createElement("option");
   option.value = Price;
   option.innerHTML = `${Title} (${Year}) ${Price} kr`;
   return option;
+}
+
+export function CaclulateSeatCost() {
+  const seats = document.getElementsByClassName("selected");
+  const howManySeats = seats.length;
+  document.getElementById("total").textContent = howManySeats * 2;
 }

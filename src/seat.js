@@ -4,17 +4,24 @@ export function Seats() {
   changeSeat.forEach((changeSeat) => {
     changeSeat.addEventListener("click", function () {
       changeSeat.classList.toggle("selected");
+      SelectedSeats();
     });
   });
 }
 
 export function SelectedSeats() {
   const selectedSeats = document.getElementsByClassName("selected");
-  const seatCount = selectedSeats.length;
+  let seatCount = selectedSeats.length;
+
+  if (seatCount === 1) {
+    seatCount = 0;
+  } else if (seatCount > 1) {
+    seatCount -= 1;
+  }
 
   document.getElementById("count").textContent = seatCount;
 }
 
-document.querySelectorAll(".seat").forEach((seat) => {
-  seat.addEventListener("click", SelectedSeats);
-});
+// document.querySelectorAll(".seat").forEach((seat) => {
+//   seat.addEventListener("click", SelectedSeats);
+// });
