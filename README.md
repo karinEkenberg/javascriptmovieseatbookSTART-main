@@ -5,6 +5,9 @@ A small project with a movie booking system. User can click on seats to select h
 and see the total cost depending on which movie they pick from the dropdown. Also it is a visualized small 
 cozy movie theater. The movie data is fetched from an external API and updates seats selection dynamically.
 
+## Screenshot
+![movieseat](https://github.com/user-attachments/assets/f5142d9f-60a9-4deb-bf3f-001894d809a1)
+
 
 ## Features
 - Using external JSON API to fetch movie data
