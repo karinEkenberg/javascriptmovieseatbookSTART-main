@@ -9,9 +9,9 @@
 // kom ihåg loggbok och readme
 
 import { Seats, SelectedSeats } from "./seat.js";
-import { AddMovies, CaclulateSeatCost } from "./movies.js";
+import { AddMovies, CalculateSeatCost } from "./movies.js";
 
 SelectedSeats();
 Seats();
 AddMovies();
-CaclulateSeatCost();
+CalculateSeatCost();

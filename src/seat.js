@@ -1,3 +1,4 @@
+import { CalculateSeatCost } from "./movies";
 const changeSeat = document.querySelectorAll(".seat");
 
 export function Seats() {
@@ -5,6 +6,7 @@ export function Seats() {
     changeSeat.addEventListener("click", function () {
       changeSeat.classList.toggle("selected");
       SelectedSeats();
+      CalculateSeatCost();
     });
   });
 }
@@ -20,8 +22,5 @@ export function SelectedSeats() {
   }
 
   document.getElementById("count").textContent = seatCount;
+  return seatCount; 
 }
-
-// document.querySelectorAll(".seat").forEach((seat) => {
-//   seat.addEventListener("click", SelectedSeats);
-// });
